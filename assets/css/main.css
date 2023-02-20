@@ -260,6 +260,10 @@ textarea:focus {
 	color: var(--color-gray);
 	padding: 10px 23px;
 }
+.site_menu ul li:hover a,
+.site_menu ul li.active a {
+	font-weight: 700;
+}
 
 .header_button .btn {
 	padding: 0px 24px;
