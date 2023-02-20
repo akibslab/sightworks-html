@@ -91,6 +91,7 @@
 		{
 			muted: true,
 			loop: true,
+			posterType: "jpg",
 			className: "",
 		}
 	);
