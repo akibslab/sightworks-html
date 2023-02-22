@@ -1133,9 +1133,103 @@ textarea:focus {
 }
 /* end: Portfolio Page */
 
-/* start: Header Area
+/* start: Team Page
 ==================================================*/
-/* end: Header Area */
+.hero-section.team {
+	background-position: top center;
+	animation: background 2s ease-in;
+}
+
+@keyframes background {
+	0% {
+		background-image: url("../img/hero/team-bg.jpg");
+	}
+	100% {
+		background-image: url("../img/hero/team-bg2.jpg");
+	}
+}
+
+@-webkit-keyframes background {
+	0% {
+		background-image: url("../img/hero/team-bg.jpg");
+	}
+	100% {
+		background-image: url("../img/hero/team-bg2.jpg");
+	}
+}
+.team-content {
+	padding-top: 90px;
+}
+.team-content .section_title {
+	max-width: 925px;
+	width: 100%;
+	margin: auto;
+}
+.team-content .section_title h2 {
+	color: var(--color-white);
+	margin-bottom: 20px;
+}
+.team-content .section_title h3 {
+	color: var(--color-white);
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+.team-bottom-content {
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+.team-bottom-content .section_title {
+	max-width: 700px;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+.team-bottom-content .section_title h4 {
+	color: var(--color-white);
+	margin-bottom: 20px;
+}
+
+.team-bottom-content .section_title p {
+	color: var(--color-white);
+}
+.team-member {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+.single_team_member {
+	text-align: center;
+	padding: 10px 25px;
+	max-width: 330px;
+	margin: auto;
+}
+
+.single_team_member .member_image img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.single_team_member .member_content h5 {
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: 600;
+	font-family: var(--font-Fic);
+	margin-bottom: 20px;
+}
+
+.single_team_member .member_content p {
+	margin-bottom: 0px;
+}
+.team-bottom-img {
+	height: 465px;
+	width: 100%;
+	display: block;
+	background-size: cover;
+	background-position: center;
+	background-color: var(--color-light-gray);
+}
+/* end: Team Page */
 
 /* start: Header Area
 ==================================================*/
