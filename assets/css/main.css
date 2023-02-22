@@ -688,6 +688,7 @@ textarea:focus {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 300;
+	font-family: var(--font-Fic);
 	width: 100%;
 	display: block;
 	cursor: pointer;
@@ -803,7 +804,7 @@ textarea:focus {
 ==================================================*/
 .working-process {
 	padding-top: 90px;
-	padding-bottom: 90px;
+	/* padding-bottom: 90px; */
 }
 .working_process_content {
 	display: flex;
@@ -885,6 +886,11 @@ textarea:focus {
 }
 .working_bottom_title h4 {
 	color: var(--color-gray);
+	margin-bottom: 0;
+}
+.working_bottom_title img {
+	width: 300px;
+	height: 300px;
 }
 
 /* end: Working Process */
@@ -1231,9 +1237,162 @@ textarea:focus {
 }
 /* end: Team Page */
 
-/* start: Header Area
+/* start: Contact Page
 ==================================================*/
-/* end: Header Area */
+.contact-hero {
+	padding-top: 100px;
+}
+.contact-hero .contact_hero_container,
+.contact-hero .user_section,
+.contact-faq .contact_faq_container {
+	max-width: 1060px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.contact_hero_content h6 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+	font-family: var(--font-Fic);
+	margin-bottom: 20px;
+}
+
+.contact_hero_content p {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.contact-hero .buttons {
+	padding-top: 30px;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.contact-hero .buttons .btn {
+	padding: 9px 96px;
+	margin-bottom: 20px;
+	background-color: var(--color-white);
+}
+.contact-hero .buttons .btn:hover {
+	background-color: var(--color-gray);
+}
+.user_section {
+	margin-top: 35px;
+}
+.user_section .user_image {
+	text-align: right;
+	margin-right: 15px;
+	margin-top: 15px;
+}
+.user_section .user_image img {
+	width: 217px;
+	height: 217px;
+	border-radius: 50%;
+}
+.user_info {
+	border-top: 4px solid var(--color-gray);
+	padding-top: 55px;
+	margin-bottom: 20px;
+}
+
+.user_info h6 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+	font-family: var(--font-Fic);
+	margin-bottom: 20px;
+}
+
+.user_info p {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+.user_info p span.address {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.user_info p a {
+	font-weight: 300;
+	color: var(--color-gray);
+	display: block;
+}
+
+.user_info p a:hover {
+	font-weight: 500;
+}
+
+.user_info p a.email {
+	text-decoration: underline;
+}
+.contact-faq {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+.contact-faq .section_title h3 {
+	letter-spacing: 0.03em;
+	font-weight: 500;
+}
+
+.contact-faq .section_title {
+	margin-bottom: 45px;
+}
+
+.contact-faq .faq_accordion {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.contact-faq .faq_accordion .accordion_item .accordion_title {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 600;
+	color: #424653;
+	padding: 35px 35px 35px 0;
+}
+
+.contact-faq .faq_accordion .accordion_item .accordion_title::after,
+.contact-faq .faq_accordion .accordion_item .accordion_title::before {
+	right: 0;
+}
+.contact-faq .faq_accordion .accordion_item .accordion_text p {
+	color: var(--color-black);
+}
+
+.contact-faq .faq_accordion .accordion_item .accordion_text p:last-child {
+	margin-bottom: 40px;
+}
+.faq_bottom_cta {
+	display: FLEX;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.faq_bottom_cta h6 {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 600;
+	font-family: var(--font-Fic);
+	margin-bottom: 0px;
+	color: #424653;
+}
+
+.faq_bottom_cta .btn {
+	background-color: var(--color-white);
+	padding: 4px 40px;
+}
+
+.faq_bottom_cta .btn:hover {
+	background-color: var(--color-gray);
+}
+/* end: Contact Pge */
 
 /* start: Header Area
 ==================================================*/
