@@ -17,9 +17,9 @@
 			slidesToShow: 6,
 			slidesToScroll: 1,
 			autoplay: true,
-			autoplaySpeed: 2000,
-			speed: 2000,
-			// cssEase: "linear",
+			autoplaySpeed: 0,
+			speed: 3000,
+			cssEase: "linear",
 			dots: false,
 			arrows: false,
 			// centerMode: true,
@@ -34,21 +34,47 @@
 			],
 		});
 	}
-
-	if ($(".testimonial_active").length > 0) {
-		$(".testimonial_active").slick({
-			infinite: false,
-			slidesToShow: 2,
+	// clients carousels
+	if ($(".logos_active").length > 0) {
+		$(".logos_active").slick({
+			infinite: true,
+			slidesToShow: 6,
 			slidesToScroll: 1,
 			autoplay: false,
 			autoplaySpeed: 2000,
 			speed: 2000,
+			dots: false,
+			arrows: false,
+			centerMode: true,
+			variableWidth: true,
 			// cssEase: "linear",
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+					},
+				},
+			],
+		});
+	}
+
+	if ($(".testimonial_active").length > 0) {
+		$(".testimonial_active").slick({
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			// speed: 2000,
+			autoplay: false,
+			autoplaySpeed: 2000,
+			centerMode: true,
+			variableWidth: true,
+			touchMove: true,
+			cssEase: "linear",
 			dots: false,
 			arrows: true,
 			prevArrow: $(".prev"),
 			nextArrow: $(".next"),
-			variableWidth: true,
 			responsive: [
 				{
 					breakpoint: 768,
