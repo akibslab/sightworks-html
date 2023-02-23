@@ -121,6 +121,22 @@
 			className: "",
 		}
 	);
+	$(window).on("load", function () {
+		if ($(".grid").length > 0) {
+			$(".grid").imagesLoaded(function () {
+				// init Isotope
+				$(".grid").isotope({
+					layoutMode: "packery",
+					itemSelector: ".grid-item",
+					// percentPosition: true,
+					packery: {
+						columnWidth: ".grid-sizer",
+						horizontal: true,
+					},
+				});
+			});
+		}
+	});
 
 	// Sticky Menu
 	$(window).on("scroll", function () {
