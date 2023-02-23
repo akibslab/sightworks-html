@@ -23,31 +23,7 @@
 			dots: false,
 			arrows: false,
 			// centerMode: true,
-			// variableWidth: true,
-			responsive: [
-				{
-					breakpoint: 768,
-					settings: {
-						slidesToShow: 1,
-					},
-				},
-			],
-		});
-	}
-	// clients carousels
-	if ($(".logos_active").length > 0) {
-		$(".logos_active").slick({
-			infinite: true,
-			slidesToShow: 6,
-			slidesToScroll: 1,
-			autoplay: false,
-			autoplaySpeed: 2000,
-			speed: 2000,
-			dots: false,
-			arrows: false,
-			centerMode: true,
 			variableWidth: true,
-			// cssEase: "linear",
 			responsive: [
 				{
 					breakpoint: 768,

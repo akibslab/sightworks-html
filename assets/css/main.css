@@ -89,8 +89,8 @@ h6 a {
 	color: inherit;
 }
 h1 {
-	font-size: 50px;
-	line-height: 75px;
+	font-size: 55px;
+	line-height: 72px;
 }
 h2 {
 	font-size: 42px;
@@ -320,8 +320,11 @@ textarea:focus {
 	font-weight: 700;
 	margin-bottom: 0px;
 }
-.hero_content .title span {
-	font-weight: 400;
+.hero_content .title-2 {
+	font-weight: 300;
+	font-size: 55px;
+	line-height: 72px;
+	color: var(--color-white);
 }
 .hero_content .subtitle {
 	font-size: 21px;
@@ -329,8 +332,10 @@ textarea:focus {
 	color: var(--color-white);
 	font-family: var(--font-Fic);
 	font-weight: 500;
-	margin-bottom: 50px;
 	margin-top: 20px;
+}
+.hero_content .btn {
+	margin-top: 50px;
 }
 .hero_content .text {
 	font-size: 18px;
@@ -338,6 +343,7 @@ textarea:focus {
 	color: var(--color-white);
 	margin-bottom: 0;
 	margin-top: 30px;
+	font-weight: 300;
 }
 /* end: Hero Section */
 
@@ -431,12 +437,15 @@ textarea:focus {
 .clients_carousel .slick-track {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 .clients_carousel .client_logo {
-	margin: 0 25px;
+	display: flex;
+	justify-content: center;
 }
 .clients_carousel .client_logo img {
 	opacity: 0.7;
+	margin: 0 25px;
 }
 /* end: Clients Section */
 
@@ -966,7 +975,7 @@ textarea:focus {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 80%;
-	margin: auto;
+	margin-left: auto;
 }
 
 .cta_content .list-style.column li {
@@ -1067,7 +1076,6 @@ textarea:focus {
 	margin-bottom: 5px;
 }
 .logos-section .button .btn {
-	padding: 9px 165px;
 	background-color: var(--color-white);
 }
 .logos-section .button .btn:hover {
@@ -1279,7 +1287,6 @@ textarea:focus {
 }
 
 .contact-hero .buttons .btn {
-	padding: 9px 96px;
 	margin-bottom: 20px;
 	background-color: var(--color-white);
 }
