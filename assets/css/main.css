@@ -1250,6 +1250,9 @@ textarea:focus {
 	margin-left: auto;
 	margin-right: auto;
 }
+.contact_hero_calender {
+	margin-right: 15px;
+}
 .contact_hero_content h6 {
 	font-size: 18px;
 	line-height: 24px;
@@ -1394,9 +1397,38 @@ textarea:focus {
 }
 /* end: Contact Pge */
 
-/* start: Header Area
+/* start: Single Portfolio
 ==================================================*/
-/* end: Header Area */
+.page-heading {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		#525768;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.page_heading_content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.page_heading_content .left_heading {
+	margin-bottom: 0;
+	font-size: 30px;
+	line-height: 42px;
+	font-weight: 700;
+	color: var(--color-white);
+}
+
+.page_heading_content .right_heading {
+	margin-bottom: 0;
+	text-align: right;
+	font-size: 25px;
+	line-height: 35px;
+	font-weight: 400;
+	color: var(--color-white);
+}
+/* end: Single Portfolio */
 
 /* start: Header Area
 ==================================================*/
