@@ -214,6 +214,23 @@ textarea:focus {
 .slick-slide {
 	height: inherit !important;
 }
+.slick-dots li {
+	text-indent: -999px;
+	width: 13px;
+	height: 13px;
+	background-color: #c2c2c2;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0 4.5px;
+}
+
+.slick-dots {
+	text-align: center;
+}
+
+.slick-dots li.slick-active {
+	background-color: var(--color-gray);
+}
 
 .bg-light-light {
 	background-color: var(--color-light-light);
@@ -234,6 +251,139 @@ textarea:focus {
 	background-color: var(--color-green);
 }
 /* End Default Css */
+
+/*
+* ====================================
+*  71. Meanmenu
+* ====================================
+*/
+.mean-container a.meanmenu-reveal {
+	display: none;
+}
+
+.mean-container .mean-nav {
+	background: none;
+	margin-top: 0;
+}
+
+.mean-container .mean-bar {
+	padding: 0;
+	min-height: auto;
+	background: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 40px;
+}
+
+.mean-container .mean-nav > ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+	display: block !important;
+}
+
+.mean-container a.meanmenu-reveal {
+	display: none !important;
+}
+
+.mean-container .mean-nav ul li a {
+	width: 100%;
+	padding: 15px 0;
+	color: #333333;
+	border-top: none;
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+.mean-container .mean-nav ul li a:hover {
+	color: #c79153;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+	margin-top: 5px;
+	padding: 0 !important;
+	line-height: 14px;
+	border: 1px solid #ddd !important;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	color: #333333;
+	line-height: 30px;
+	top: 0;
+	font-weight: 400;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+	background: #c79153;
+	color: #fff;
+	border-color: #ebebeb;
+}
+
+.mean-container .mean-nav ul li > a > i {
+	display: none;
+}
+
+.mean-container .mean-nav ul li > a.mean-expand i {
+	display: inline-block;
+}
+
+.mean-container .mean-nav > ul > li:first-child > a {
+	border-top: 0;
+}
+
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked {
+	color: #fff;
+	background: #333;
+}
+
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked i {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	color: #f5f4f4;
+}
+
+.mean-container .mean-nav ul li a {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 23px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.side-menu {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		#525768;
+	z-index: 999;
+	padding: 60px 20px;
+	height: 100%;
+	transition: 0.5s;
+	transform: translateX(100%);
+}
+.side-menu.open {
+	transform: translate(0);
+}
+
+.side-menu .top-area {
+	justify-content: end;
+	margin-bottom: 60px;
+}
+
+.side-menu .top-area .cross-icon-box {
+	max-width: 45px;
+	display: inline-block;
+}
+.side-menu .mean-container .mean-nav li a {
+	text-align: left;
+	font-size: 22px;
+	line-height: 42px;
+	padding: 5px 0;
+}
 
 /* start: Header Area
 ==================================================*/

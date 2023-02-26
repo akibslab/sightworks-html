@@ -1,6 +1,20 @@
 (function ($) {
 	"use strict";
 
+	$("header .site_menu").meanmenu({
+		meanMenuContainer: ".mobile-menu",
+		meanScreenWidth: "767",
+		meanExpand: ['<i class="fal fa-plus"></i>'],
+	});
+
+	$("header .menu_bars a").on("click", function () {
+		$(".side-menu").addClass("open");
+	});
+
+	$(".side-menu .cross-icon-box").on("click", function () {
+		$(".side-menu").removeClass("open");
+	});
+
 	var wow = new WOW({
 		boxClass: "wow", // default
 		animateClass: "animated", // default
@@ -48,6 +62,7 @@
 			touchMove: true,
 			cssEase: "ease",
 			arrows: true,
+			dots: false,
 			prevArrow: $(".prev"),
 			nextArrow: $(".next"),
 			responsive: [
@@ -55,6 +70,8 @@
 					breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
+						arrows: false,
+						dots: true,
 					},
 				},
 			],
@@ -81,9 +98,26 @@
 					breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
+						arrows: false,
+						dots: true,
 					},
 				},
 			],
+		});
+	}
+	if ($(".working-process-active").length > 0) {
+		$(".working-process-active").slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			centerMode: true,
+			autoplay: false,
+			autoplaySpeed: 2000,
+			speed: 2000,
+			dots: false,
+			arrows: false,
+			dots: true,
+			variableWidth: true,
 		});
 	}
 

@@ -27,7 +27,6 @@
   <!-- slickSlider -->
   <link rel="stylesheet" href="assets/css/slick.css" />
 
-
   <!-- MeanMenu -->
   <link rel="stylesheet" href="assets/css/meanmenu.css" />
 
@@ -50,21 +49,39 @@
             <div class="site_logo">
               <a href="index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
             </div>
-            <div class="site_menu">
+            <div class="site_menu d-none d-md-block">
               <ul>
                 <li><a href="kunden.html">Kundenstimmen</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="team.html">Mein Team & ich</a></li>
               </ul>
             </div>
-            <div class="header_button">
+            <div class="header_button d-none d-md-block">
               <a class="btn" href="#">Termin vereinbaren</a>
+            </div>
+
+            <div class="menu_bars d-md-none">
+              <a href="javascript:void(0)"><img src="./assets/img/icons/bars.svg" alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- Sidemenu Start -->
+  <div class="side-menu d-md-none">
+    <div class="top-area d-flex flex-wrap align-items-center">
+
+      <a href="javascript:void(0)" class="cross-icon-box">
+        <img src="./assets/img/icons/close.svg" class="cross" alt="">
+      </a>
+    </div>
+
+    <div class="mobile-menu"></div>
+
+  </div>
+  <!-- Sidemenu End -->
   <!-- end: Header Area -->
   <main class="main-content" id="main">
 
@@ -74,15 +91,22 @@
       <div class="hero-overlay"></div>
       <div class="container">
         <div class="row">
-          <div class="col-md-6 offset-md-6">
+          <div class="col-lg-8 offset-lg-4 col-xl-7 offset-xl-5 col-xxl-6 offset-xxl-6">
             <div class="hero_content">
               <h1 class="title">Ich bringe Sie <br>zum Strahlen </h1>
-              <h2 class="title-2 wow fadeIn" data-wow-delay="3s">Mit dem perfekten branding – zeitgemäß, <br> klar
+              <h2 class="title-2 wow fadeIn d-none d-lg-block" data-wow-delay="3s">Mit dem perfekten branding –
+                zeitgemäß, <br> klar
+                und authentisch</h2>
+              <h2 class="title-2 wow fadeIn d-lg-none" data-wow-delay=".5s">Mit dem perfekten branding – zeitgemäß, <br>
+                klar
                 und authentisch</h2>
 
 
-              <h5 class="subtitle wow fadeInDown" data-wow-delay="3.4s">in Print und OnScreen</h5>
-              <a href="#why-me" class="btn wow fadeInDown" data-wow-delay="3.6s">Mehr erfahren</a>
+              <h5 class="subtitle wow fadeInDown d-none d-lg-block" data-wow-delay="3.4s">in Print und OnScreen</h5>
+              <h5 class="subtitle wow fadeInDown d-lg-none" data-wow-delay=".7s">in Print und OnScreen</h5>
+              <a href="#why-me" class="btn wow fadeInDown d-none d-lg-block" data-wow-delay="3.6s">Mehr erfahren</a>
+              <a href="#why-me" class="btn wow fadeInDown d-none d-md-block d-lg-none" data-wow-delay=".9s">Mehr
+                erfahren</a>
             </div>
           </div>
         </div>
@@ -167,7 +191,7 @@
 
             </div>
 
-            <div class="section_down_arrow">
+            <div class="section_down_arrow d-none d-md-block">
               <a href="#"><img src="./assets/img/icons/arrow-down.svg" alt=""></a>
             </div>
           </div>
@@ -231,10 +255,13 @@
         <div class="row">
           <div class="col">
             <div class="why_me_content">
-              <div class="image wow fadeInUp" data-wow-delay=".3s">
+              <div class="section_title text-center wow fadeInUp" data-wow-delay=".3s">
+                <h2>So arbeite ich</h2>
+              </div>
+              <div class="image wow fadeInUp d-md-none" data-wow-delay=".3s">
                 <img src="./assets/img/why-me/img.jpg" alt="">
               </div>
-              <div class="section_title text-center wow fadeInUp" data-wow-delay=".3s">
+              <div class="section_title text-center wow fadeInUp d-none d-md-block" data-wow-delay=".3s">
                 <h2>Warum ich Sie zum Strahlen bringe</h2>
               </div>
 
@@ -291,7 +318,8 @@
               </div>
 
               <div class="button text-center wow fadeInUp" data-wow-delay=".3s">
-                <a class="btn" href="#">Mehr zu mir und meinem Team</a>
+                <a class="btn d-md-block" href="team.html">Mein Team & ich</a>
+                <a class="btn d-none d-md-block" href="team.html">Mehr zu mir und meinem Team</a>
               </div>
             </div>
           </div>
@@ -307,7 +335,8 @@
           <div class="col">
             <div class="testimonial_section_content">
               <div class="section_title text-center wow fadeInUp" data-wow-delay=".3s">
-                <h2>Das sagen meine Kunden</h2>
+                <h2 class="d-md-none">Kundenstimmen</h2>
+                <h2 class="d-none d-md-block">Das sagen meine Kunden</h2>
               </div>
 
               <div class="testimonial_carousel testimonial_active">
@@ -512,7 +541,7 @@
 
               </div>
 
-              <div class="testimonial_navs">
+              <div class="testimonial_navs d-none d-md-flex">
                 <button class="prev"><i class="fas fa-arrow-left"></i></button>
                 <button class="next"><i class="fas fa-arrow-right"></i></button>
               </div>
@@ -533,7 +562,7 @@
               <h3 class="title wow fadeInUp" data-wow-delay=".3s"><span>St. Peter-Ording / SPO <br> Tourismus</span>
                 Logo / Merchandising</h3>
 
-              <div class="faq_accordion" id="merchandisingFaq">
+              <div class="faq_accordion d-none d-md-block" id="merchandisingFaq">
 
                 <div class="accordion_item wow fadeInUp" data-wow-delay=".4s">
                   <h6 class="accordion_title collapsed" data-bs-toggle="collapse" data-bs-target="#item1">
@@ -587,7 +616,7 @@
               <h3 class="title wow fadeInUp" data-wow-delay=".3s"><span>House of Life Design <br>
                   Coaching</span>Corporate Design</h3>
 
-              <div class="faq_accordion" id="corporateFaq">
+              <div class="faq_accordion d-none d-md-block" id="corporateFaq">
 
                 <div class="accordion_item wow fadeInUp" data-wow-delay=".4s">
                   <h6 class="accordion_title collapsed" data-bs-toggle="collapse" data-bs-target="#item4">
@@ -645,7 +674,7 @@
               <h3 class="title wow fadeInUp" data-wow-delay=".3s"><span>Coffee House <br> App
                   Design</span>HiFi-Prototyping</h3>
 
-              <div class="faq_accordion" id="prototypingFaq">
+              <div class="faq_accordion d-none d-md-block" id="prototypingFaq">
 
                 <div class="accordion_item wow fadeInUp" data-wow-delay=".4s">
                   <h6 class="accordion_title collapsed" data-bs-toggle="collapse" data-bs-target="#item7">
@@ -708,7 +737,7 @@
                   <div class="project_img">
                     <img src="./assets/img/projects/1.jpg" alt="">
                   </div>
-                  <div class="project_title">
+                  <div class="project_title d-none d-md-block">
                     <h6>Libri / Weihnachtskampagne</h6>
                   </div>
                 </a>
@@ -719,7 +748,7 @@
                   <div class="project_img">
                     <img src="./assets/img/projects/2.jpg" alt="">
                   </div>
-                  <div class="project_title">
+                  <div class="project_title d-none d-md-block">
                     <h6>Weinetikett</h6>
                   </div>
                 </a>
@@ -730,7 +759,7 @@
                   <div class="project_img">
                     <img src="./assets/img/projects/3.jpg" alt="">
                   </div>
-                  <div class="project_title">
+                  <div class="project_title d-none d-md-block">
                     <h6>Klinik Dr. Guth / Mappe</h6>
                   </div>
                 </a>
@@ -741,7 +770,7 @@
                   <div class="project_img">
                     <img src="./assets/img/projects/4.jpg" alt="">
                   </div>
-                  <div class="project_title">
+                  <div class="project_title d-none d-md-block">
                     <h6>Sheran Gym / Website</h6>
                   </div>
                 </a>
@@ -752,7 +781,7 @@
                   <div class="project_img">
                     <img src="./assets/img/projects/5.jpg" alt="">
                   </div>
-                  <div class="project_title">
+                  <div class="project_title d-none d-md-block">
                     <h6>Mammut Sports Group / Broschüre</h6>
                   </div>
                 </a>
@@ -763,7 +792,7 @@
                   <div class="project_img">
                     <img src="./assets/img/projects/6.jpg" alt="">
                   </div>
-                  <div class="project_title">
+                  <div class="project_title d-none d-md-block">
                     <h6>Bettys Bienen / Packaging</h6>
                   </div>
                 </a>
@@ -774,7 +803,7 @@
                   <div class="project_img">
                     <img src="./assets/img/projects/7.png" alt="">
                   </div>
-                  <div class="project_title">
+                  <div class="project_title d-none d-md-block">
                     <h6>SFZ / Branding</h6>
                   </div>
                 </a>
@@ -782,13 +811,14 @@
 
             </div>
 
-            <div class="projects_navs">
+            <div class="projects_navs d-none d-md-flex">
               <button class="Pprev"><i class="fas fa-arrow-left"></i></button>
               <button class="Pnext"><i class="fas fa-arrow-right"></i></button>
             </div>
 
             <div class="button text-center wow fadeInUp" data-wow-delay=".5s">
-              <a href="#" class="btn">Komplette Projekt-Übersicht</a>
+              <a href="#" class="btn d-none d-md-block">Komplette Projekt-Übersicht</a>
+              <a href="#" class="btn d-md-none">Alle Projekte</a>
             </div>
           </div>
         </div>
@@ -816,11 +846,14 @@
 
     <!-- start: Working Process -->
     <section class="working-process">
-      <div class="container">
+      <div class="container-fluid gx-0 gx-md-4 overflow-hidden">
         <div class="row">
           <div class="col">
+            <div class="section_title text-center d-md-none">
+              <h2>Projekt-Phasen</h2>
+            </div>
 
-            <div class="working_process_content">
+            <div class="working_process_content d-none d-md-block">
 
               <div class="process_card wow fadeInUp" data-wow-delay=".3s">
                 <div class="inner_card">
@@ -865,11 +898,11 @@
 
             </div>
 
-            <div class="divider wow fadeInUp" data-wow-delay=".3s">
+            <div class="divider wow fadeInUp d-none d-md-block" data-wow-delay=".3s">
               <span>Garantieversprechen</span>
             </div>
 
-            <div class="working_process_content">
+            <div class="working_process_content d-none d-md-block">
 
               <div class="process_card wow fadeInUp" data-wow-delay=".3s">
                 <div class="inner_card">
@@ -911,6 +944,94 @@
                   </div>
                 </div>
               </div>
+
+            </div>
+
+            <div class="working_process_content working-process-active">
+
+              <div class="process_card wow fadeInUp" data-wow-delay=".3s">
+                <div class="inner_card">
+                  <div class="card_no">1</div>
+                  <div class="card_content">
+                    <span class="title">Kennenlern-Call</span>
+                    <ul>
+                      <li>Stimmt die Chemie?</li>
+                      <li>Wer sind Sie?</li>
+                      <li>Das bin ich</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="process_card wow fadeInUp" data-wow-delay=".5s">
+                <div class="inner_card">
+                  <div class="card_no">2</div>
+                  <div class="card_content">
+                    <span class="title">Interview Phase</span>
+                    <ul>
+                      <li>ind Ihre Ziele und Probleme?</li>
+                      <li>So kann ich helfen</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="process_card wow fadeInUp" data-wow-delay=".7s">
+                <div class="inner_card">
+                  <div class="card_no">3</div>
+                  <div class="card_content">
+                    <span class="title">Auswertung</span>
+                    <ul>
+                      <li>Meine Vorschläge zur Zielerfüllung</li>
+                      <li>Strategie</li>
+                      <li>Transparentes Angebot </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="process_card wow fadeInUp" data-wow-delay=".3s">
+                <div class="inner_card">
+                  <div class="card_no">4</div>
+                  <div class="card_content">
+                    <span class="title">Los gehts</span>
+                    <ul>
+                      <li>Beauftragung</li>
+                      <li>Fixierung Ablauf und Fristen</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="process_card wow fadeInUp" data-wow-delay=".5s">
+                <div class="inner_card">
+                  <div class="card_no">5</div>
+                  <div class="card_content">
+                    <span class="title">Ausarbeitung</span>
+                    <ul>
+                      <li>Erstellung der vereinbarten Steps</li>
+                      <li>Präsentation(en)</li>
+                      <li>Korrekturphase(n)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="process_card wow fadeInUp" data-wow-delay=".7s">
+                <div class="inner_card">
+                  <div class="card_no">6</div>
+                  <div class="card_content">
+                    <span class="title">Finalisierung</span>
+                    <ul>
+                      <li>Übergabe Projekt</li>
+                      <li>Austausch über weitere Zusammenarbeit</li>
+                      <li>Feedback</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
 
             </div>
 
