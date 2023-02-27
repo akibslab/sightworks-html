@@ -1153,6 +1153,10 @@ textarea:focus {
 	margin-right: 40px;
 	overflow: hidden;
 }
+
+.footer_widget .footer_logo a {
+	display: inline-block;
+}
 .footer_widget .footer_content {
 	width: 215px;
 	overflow: hidden;

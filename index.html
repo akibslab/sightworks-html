@@ -104,8 +104,9 @@
 
               <h5 class="subtitle wow fadeInDown d-none d-lg-block" data-wow-delay="3.4s">in Print und OnScreen</h5>
               <h5 class="subtitle wow fadeInDown d-lg-none" data-wow-delay=".7s">in Print und OnScreen</h5>
-              <a href="#why-me" class="btn wow fadeInDown d-none d-lg-block" data-wow-delay="3.6s">Mehr erfahren</a>
-              <a href="#why-me" class="btn wow fadeInDown d-none d-md-block d-lg-none" data-wow-delay=".9s">Mehr
+              <a href="#why-me" class="btn wow fadeInDown d-none d-lg-inline-block" data-wow-delay="3.6s">Mehr
+                erfahren</a>
+              <a href="#why-me" class="btn wow fadeInDown d-none d-md-inline-block d-lg-none" data-wow-delay=".9s">Mehr
                 erfahren</a>
             </div>
           </div>
@@ -255,10 +256,10 @@
         <div class="row">
           <div class="col">
             <div class="why_me_content">
-              <div class="section_title text-center wow fadeInUp" data-wow-delay=".3s">
+              <div class="section_title text-center wow fadeInUp  d-md-none" data-wow-delay=".3s">
                 <h2>So arbeite ich</h2>
               </div>
-              <div class="image wow fadeInUp d-md-none" data-wow-delay=".3s">
+              <div class="image wow fadeInUp" data-wow-delay=".3s">
                 <img src="./assets/img/why-me/img.jpg" alt="">
               </div>
               <div class="section_title text-center wow fadeInUp d-none d-md-block" data-wow-delay=".3s">
@@ -318,8 +319,8 @@
               </div>
 
               <div class="button text-center wow fadeInUp" data-wow-delay=".3s">
-                <a class="btn d-md-block" href="team.html">Mein Team & ich</a>
-                <a class="btn d-none d-md-block" href="team.html">Mehr zu mir und meinem Team</a>
+                <a class="btn d-md-none" href="team.html">Mein Team & ich</a>
+                <a class="btn d-none d-md-inline-block" href="team.html">Mehr zu mir und meinem Team</a>
               </div>
             </div>
           </div>
@@ -817,7 +818,7 @@
             </div>
 
             <div class="button text-center wow fadeInUp" data-wow-delay=".5s">
-              <a href="#" class="btn d-none d-md-block">Komplette Projekt-Übersicht</a>
+              <a href="#" class="btn d-none d-md-inline-block">Komplette Projekt-Übersicht</a>
               <a href="#" class="btn d-md-none">Alle Projekte</a>
             </div>
           </div>
@@ -853,7 +854,7 @@
               <h2>Projekt-Phasen</h2>
             </div>
 
-            <div class="working_process_content d-none d-md-block">
+            <div class="working_process_content d-none d-md-flex">
 
               <div class="process_card wow fadeInUp" data-wow-delay=".3s">
                 <div class="inner_card">
@@ -902,7 +903,7 @@
               <span>Garantieversprechen</span>
             </div>
 
-            <div class="working_process_content d-none d-md-block">
+            <div class="working_process_content d-none d-md-flex">
 
               <div class="process_card wow fadeInUp" data-wow-delay=".3s">
                 <div class="inner_card">
@@ -947,7 +948,7 @@
 
             </div>
 
-            <div class="working_process_content working-process-active">
+            <div class="working_process_content working-process-active d-md-none">
 
               <div class="process_card wow fadeInUp" data-wow-delay=".3s">
                 <div class="inner_card">
@@ -1036,7 +1037,8 @@
             </div>
 
             <div class="working_bottom_title text-center">
-              <h4 class="wow fadeInUp" data-wow-delay=".3s">... Ihr Unternehmen danach: </h4>
+              <h4 class="wow fadeInUp d-none d-md-block" data-wow-delay=".3s">... Ihr Unternehmen danach: </h4>
+              <h4 class="wow fadeInUp d-md-none" data-wow-delay=".3s">Und danach</h4>
 
               <img src="./assets/img/gif/rocket.gif" alt="">
             </div>
@@ -1098,7 +1100,9 @@
               <p class="text wow fadeInUp" data-wow-delay=".4s">Dann buchen Sie einen unverbindlichen <br>
                 Kennenlerntermin oder schreiben Sie mir. </p>
 
-              <a href="kontakt.html" class="btn wow fadeInUp" data-wow-delay=".5s">Kontakt</a>
+              <div class="button text-center">
+                <a href="kontakt.html" class="btn wow fadeInUp" data-wow-delay=".5s">Kontakt</a>
+              </div>
             </div>
           </div>
         </div>
@@ -1121,6 +1125,10 @@
 
               <span class="address">22607 Hamburg Deutschland</span>
               <a href="tel:+49 (0) 40 4145 6068" class="phone">+49 (0) 40 4145 6068</a>
+              <ul class="footer_menu d-md-none">
+                <li><a href="agbs.html">Impressum <br> Datenschutz
+                    AGBs</a></li>
+              </ul>
               <ul class="footer_socials">
                 <li><a href="mailto:anfrage@sightworks.de"><i class="fas fa-envelope"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/andrea-lechler-a3a61067/"><i
@@ -1133,7 +1141,7 @@
             </div>
           </div>
 
-          <div class="footer_widget">
+          <div class="footer_widget d-none d-md-block">
             <div class="footer_content">
               <ul class="footer_menu">
                 <li><a href="kunden.html">Kundenstimmen</a></li>
