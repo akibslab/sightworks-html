@@ -49,21 +49,39 @@
             <div class="site_logo">
               <a href="index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
             </div>
-            <div class="site_menu">
+            <div class="site_menu d-none d-md-block">
               <ul>
                 <li><a href="kunden.html">Kundenstimmen</a></li>
-                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="team.html">Mein Team & ich</a></li>
               </ul>
             </div>
-            <div class="header_button">
+            <div class="header_button d-none d-md-block">
               <a class="btn" href="#">Termin vereinbaren</a>
+            </div>
+
+            <div class="menu_bars d-md-none">
+              <a href="javascript:void(0)"><img src="./assets/img/icons/bars.svg" alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- Sidemenu Start -->
+  <div class="side-menu d-md-none">
+    <div class="top-area d-flex flex-wrap align-items-center">
+
+      <a href="javascript:void(0)" class="cross-icon-box">
+        <img src="./assets/img/icons/close.svg" class="cross" alt="">
+      </a>
+    </div>
+
+    <div class="mobile-menu"></div>
+
+  </div>
+  <!-- Sidemenu End -->
   <!-- end: Header Area -->
   <main class="main-content" id="main">
 
@@ -71,12 +89,13 @@
     <section class="hero-section" style="background-image: url(./assets/img/hero/portfolio-bg.jpg);">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-8 col-xl-7 col-xxl-6">
             <div class="hero_content">
               <h1 class="title">Erfolgreiche Projekte</h1>
               <h2 class="title-2 wow fadeInDown" data-wow-delay=".3s">und kreative Prozesse</h2>
 
-              <h5 class="subtitle wow fadeIn" data-wow-delay=".5s">Komplettes Branding, aber auch: Apps / Broschüren /
+              <h5 class="subtitle wow fadeIn d-none d-md-block" data-wow-delay=".5s">Komplettes Branding, aber auch:
+                Apps / Broschüren /
                 Flyer / Logo / Messe / Produktions Abwicklung / Social Media / User Interfaces / Web / und mehr</h5>
             </div>
           </div>
@@ -95,7 +114,7 @@
               <h3 class="title wow fadeInUp" data-wow-delay=".3s"><span>Schüler-Forschungs-Zentrum Hamburg</span>
                 Corporate Design</h3>
 
-              <div class="faq_accordion" id="corporateFaq">
+              <div class="faq_accordion d-none d-md-block" id="corporateFaq">
 
                 <div class="accordion_item wow fadeInUp" data-wow-delay=".4s">
                   <h6 class="accordion_title collapsed" data-bs-toggle="collapse" data-bs-target="#item1">
@@ -149,7 +168,7 @@
               <h3 class="title wow fadeInUp" data-wow-delay=".3s"><span>weyou.me <br> visual identiy</span>
                 Logoentwicklung</h3>
 
-              <div class="faq_accordion" id="logoentwicklungFaq">
+              <div class="faq_accordion d-none d-md-block" id="logoentwicklungFaq">
 
                 <div class="accordion_item wow fadeInUp" data-wow-delay=".4s">
                   <h6 class="accordion_title collapsed" data-bs-toggle="collapse" data-bs-target="#item4">
@@ -239,7 +258,7 @@
     <!-- end: Logos  -->
 
     <!-- start: Gallery Section -->
-    <section class="gallery-section">
+    <section class="gallery-section d-none d-md-block">
       <div class="container-fluid gx-0 overflow-hidden">
         <div class="row">
           <div class="col">
@@ -298,7 +317,7 @@
               <h3 class="title wow fadeInUp" data-wow-delay=".3s"><span>Sheran Gym & Spa <br> Web
                   Design</span>HiFi-Prototyping</h3>
 
-              <div class="faq_accordion" id="prototypingFaq">
+              <div class="faq_accordion d-none d-md-block" id="prototypingFaq">
 
                 <div class="accordion_item wow fadeInUp" data-wow-delay=".4s">
                   <h6 class="accordion_title collapsed" data-bs-toggle="collapse" data-bs-target="#item7">
@@ -356,7 +375,9 @@
                 Kennenlerntermin oder schreiben Sie
                 mir. </p>
 
-              <a href="kontakt.html" class="btn wow fadeInUp" data-wow-delay=".5s">Kontakt</a>
+              <div class="button text-center">
+                <a href="kontakt.html" class="btn wow fadeInUp" data-wow-delay=".5s">Kontakt</a>
+              </div>
             </div>
           </div>
         </div>
@@ -379,6 +400,10 @@
 
               <span class="address">22607 Hamburg Deutschland</span>
               <a href="tel:+49 (0) 40 4145 6068" class="phone">+49 (0) 40 4145 6068</a>
+              <ul class="footer_menu d-md-none">
+                <li><a href="agbs.html">Impressum <br> Datenschutz
+                    AGBs</a></li>
+              </ul>
               <ul class="footer_socials">
                 <li><a href="mailto:anfrage@sightworks.de"><i class="fas fa-envelope"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/andrea-lechler-a3a61067/"><i
@@ -391,7 +416,7 @@
             </div>
           </div>
 
-          <div class="footer_widget">
+          <div class="footer_widget d-none d-md-block">
             <div class="footer_content">
               <ul class="footer_menu">
                 <li><a href="kunden.html">Kundenstimmen</a></li>

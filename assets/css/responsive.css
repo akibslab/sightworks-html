@@ -394,6 +394,10 @@
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
+	.logos-section {
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
 }
 
 /* Small devices (large mobile) (landscape phones, 480px to 767px) */
