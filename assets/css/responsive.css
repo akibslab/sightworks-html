@@ -94,6 +94,15 @@
 	.cta_content {
 		max-width: 100%;
 	}
+	.team-bottom-content {
+		padding-top: 0px;
+		padding-bottom: 50px;
+		margin-top: -50px;
+	}
+	.single_team_member {
+		padding: 10px 0px;
+		max-width: 100%;
+	}
 }
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */
@@ -174,6 +183,7 @@
 	}
 	.why-me-section {
 		padding-top: 50px;
+		padding-bottom: 50;
 	}
 	.why_me_content .section_title {
 		margin-bottom: 40px;
@@ -397,6 +407,25 @@
 	.logos-section {
 		padding-top: 30px;
 		padding-bottom: 50px;
+	}
+	.team-content {
+		padding-top: 50px;
+		background-color: var(--color-blue) !important;
+	}
+
+	.team-content .section_title h3 {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.team-member {
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+	.team-member .section_title {
+		margin-bottom: 30px;
+	}
+	.single_team_member {
+		margin-bottom: 30px;
 	}
 }
 

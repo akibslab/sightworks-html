@@ -49,21 +49,39 @@
             <div class="site_logo">
               <a href="index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
             </div>
-            <div class="site_menu">
+            <div class="site_menu d-none d-md-block">
               <ul>
                 <li><a href="kunden.html">Kundenstimmen</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li class="active"><a href="team.html">Mein Team & ich</a></li>
+                <li><a href="team.html">Mein Team & ich</a></li>
               </ul>
             </div>
-            <div class="header_button">
+            <div class="header_button d-none d-md-block">
               <a class="btn" href="#">Termin vereinbaren</a>
+            </div>
+
+            <div class="menu_bars d-md-none">
+              <a href="javascript:void(0)"><img src="./assets/img/icons/bars.svg" alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- Sidemenu Start -->
+  <div class="side-menu d-md-none">
+    <div class="top-area d-flex flex-wrap align-items-center">
+
+      <a href="javascript:void(0)" class="cross-icon-box">
+        <img src="./assets/img/icons/close.svg" class="cross" alt="">
+      </a>
+    </div>
+
+    <div class="mobile-menu"></div>
+
+  </div>
+  <!-- Sidemenu End -->
   <!-- end: Header Area -->
   <main class="main-content" id="main">
 
@@ -72,7 +90,7 @@
     <section class="hero-section team" style="background-image: url(./assets/img/hero/team-bg2.jpg);">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 offset-md-6">
+          <div class="col-lg-8 offset-lg-4 col-xl-7 offset-xl-5 col-xxl-6 offset-xxl-6">
             <div class="hero_content">
               <h1 class="title wow fadeInDown" data-wow-delay=".3s">Langjährige Erfahrung</h1>
 
@@ -109,6 +127,14 @@
         <div class="row">
           <div class="col">
             <div class="why_me_content">
+
+              <div class="section_title text-center wow fadeInUp  d-md-none" data-wow-delay=".3s">
+                <h2>So arbeite ich</h2>
+              </div>
+              <div class="image wow fadeInUp  d-md-none" data-wow-delay=".3s">
+                <img src="./assets/img/why-me/img.jpg" alt="">
+              </div>
+
               <div class="why_me_services">
 
                 <div class="why_me_service wow fadeInUp" data-wow-delay=".3s">
@@ -167,7 +193,7 @@
     <!-- end: Why Me -->
 
     <!-- start: Team Content  -->
-    <section class="team-bottom-content bg-green">
+    <section class="team-bottom-content bg-green d-none d-md-block">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -202,6 +228,13 @@
     <!-- start: Team Member -->
     <section class="team-member">
       <div class="container">
+        <div class="row d-md-none">
+          <div class="col">
+            <div class="section_title text-center wow fadeInUp" data-wow-delay=".3s">
+              <h2>Mein Team für mehr</h2>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4">
             <div class="single_team_member wow fadeInUp" data-wow-delay=".3s">
@@ -265,7 +298,7 @@
     <!-- end: CTA Section -->
 
     <!-- start: Team Bottom Image -->
-    <sectionl class="team-bottom-img" style="background-image: url(./assets/img/team/ameisen.jpg);">
+    <sectionl class="team-bottom-img d-none d-md-block" style="background-image: url(./assets/img/team/ameisen.jpg);">
 
     </sectionl>
     <!-- end: Team Bottom Image -->
@@ -285,6 +318,10 @@
 
               <span class="address">22607 Hamburg Deutschland</span>
               <a href="tel:+49 (0) 40 4145 6068" class="phone">+49 (0) 40 4145 6068</a>
+              <ul class="footer_menu d-md-none">
+                <li><a href="agbs.html">Impressum <br> Datenschutz
+                    AGBs</a></li>
+              </ul>
               <ul class="footer_socials">
                 <li><a href="mailto:anfrage@sightworks.de"><i class="fas fa-envelope"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/andrea-lechler-a3a61067/"><i
@@ -297,7 +334,7 @@
             </div>
           </div>
 
-          <div class="footer_widget">
+          <div class="footer_widget d-none d-md-block">
             <div class="footer_content">
               <ul class="footer_menu">
                 <li><a href="kunden.html">Kundenstimmen</a></li>
