@@ -387,6 +387,13 @@
 	.footer_content .footer_socials {
 		margin-top: 15px;
 	}
+	.cta_content .list-style.column {
+		max-width: 100%;
+	}
+	.cta_content .list-style.column li {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
 }
 
 /* Small devices (large mobile) (landscape phones, 480px to 767px) */
