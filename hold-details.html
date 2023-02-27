@@ -50,22 +50,39 @@
             <div class="site_logo">
               <a href="index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
             </div>
-            <div class="site_menu">
+            <div class="site_menu d-none d-md-block">
               <ul>
                 <li><a href="kunden.html">Kundenstimmen</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="team.html">Mein Team & ich</a></li>
               </ul>
             </div>
-            <div class="header_button">
+            <div class="header_button d-none d-md-block">
               <a class="btn" href="#">Termin vereinbaren</a>
+            </div>
+
+            <div class="menu_bars d-md-none">
+              <a href="javascript:void(0)"><img src="./assets/img/icons/bars.svg" alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <!-- end: Header Area -->
+
+  <!-- Sidemenu Start -->
+  <div class="side-menu d-md-none">
+    <div class="top-area d-flex flex-wrap align-items-center">
+
+      <a href="javascript:void(0)" class="cross-icon-box">
+        <img src="./assets/img/icons/close.svg" class="cross" alt="">
+      </a>
+    </div>
+
+    <div class="mobile-menu"></div>
+
+  </div>
+  <!-- Sidemenu End -->
   <main class="main-content" id="main">
 
     <!-- start: Hero Section -->
@@ -166,7 +183,7 @@
     <!-- end: Details Masonry -->
 
     <!-- start: CTA Section -->
-    <section class="cta-section bg-light-gray">
+    <section class="cta-section details-page bg-light-gray">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -198,6 +215,10 @@
 
               <span class="address">22607 Hamburg Deutschland</span>
               <a href="tel:+49 (0) 40 4145 6068" class="phone">+49 (0) 40 4145 6068</a>
+              <ul class="footer_menu d-md-none">
+                <li><a href="agbs.html">Impressum <br> Datenschutz
+                    AGBs</a></li>
+              </ul>
               <ul class="footer_socials">
                 <li><a href="mailto:anfrage@sightworks.de"><i class="fas fa-envelope"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/andrea-lechler-a3a61067/"><i
@@ -210,7 +231,7 @@
             </div>
           </div>
 
-          <div class="footer_widget">
+          <div class="footer_widget d-none d-md-block">
             <div class="footer_content">
               <ul class="footer_menu">
                 <li><a href="kunden.html">Kundenstimmen</a></li>

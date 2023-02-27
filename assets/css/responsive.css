@@ -112,6 +112,29 @@
 		width: 100%;
 		margin-bottom: 40px;
 	}
+	.grid .grid-item {
+		height: 480px;
+	}
+	.grid .grid-item.height-2x {
+		height: 960px;
+	}
+	.page-heading {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+	.page_heading_content {
+		flex-direction: column;
+		align-items: baseline;
+	}
+
+	.page_heading_content .left_heading {
+		margin-bottom: 20px;
+	}
+
+	.page_heading_content .right_heading {
+		margin-bottom: 20px;
+		text-align: left;
+	}
 }
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */
@@ -488,6 +511,58 @@
 		text-align: left;
 		width: 100%;
 		margin-bottom: 50px;
+	}
+	.terms-condition {
+		background-color: var(--color-white);
+		padding-top: 56px;
+		padding-bottom: 30px;
+	}
+	.terms_condition_content .data_protection {
+		padding-top: 30px;
+	}
+	.terms_condition_content p {
+		word-wrap: break-word;
+	}
+	.details-content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.content_text:not(:last-child) {
+		padding-bottom: 0;
+	}
+
+	.content_text:not(:last-child):after {
+		display: none;
+	}
+	.grid .grid-item.grid-33,
+	.grid .grid-item.grid-67,
+	.grid .grid-item.grid-50 {
+		width: 100%;
+	}
+	.grid .grid-item,
+	.grid .grid-item.height-2x {
+		height: auto;
+	}
+	.page-heading {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+	.page_heading_content {
+		flex-direction: column;
+		align-items: baseline;
+	}
+
+	.page_heading_content .left_heading {
+		margin-bottom: 20px;
+	}
+
+	.page_heading_content .right_heading {
+		margin-bottom: 20px;
+		text-align: left;
+	}
+	.cta-section.details-page {
+		text-align: center;
 	}
 }
 
