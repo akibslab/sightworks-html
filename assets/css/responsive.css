@@ -103,6 +103,15 @@
 		padding: 10px 0px;
 		max-width: 100%;
 	}
+	.faq_bottom_cta {
+		justify-content: center;
+	}
+
+	.faq_bottom_cta h6 {
+		text-align: left;
+		width: 100%;
+		margin-bottom: 40px;
+	}
 }
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */
@@ -426,6 +435,59 @@
 	}
 	.single_team_member {
 		margin-bottom: 30px;
+	}
+	.contact-hero {
+		padding-top: 87px;
+		padding-bottom: 60px;
+		background-color: var(--color-blue) !important;
+	}
+
+	.contact_hero_content {
+		text-align: center;
+	}
+	.contact_hero_content p {
+		color: var(--color-white);
+	}
+	.contact_hero_content .title {
+		color: var(--color-white);
+		margin-bottom: 40px;
+	}
+
+	.contact_hero_content .title span {
+		font-weight: 400;
+	}
+	.contact-hero .buttons {
+		padding-top: 0px;
+		padding-bottom: 50px;
+	}
+	.user_section .user_image {
+		text-align: center;
+	}
+
+	.user_section .user_image img {
+		width: 180px;
+		height: 180px;
+	}
+	.contact-faq {
+		background-color: var(--color-white);
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+	.contact-faq .section_title {
+		margin-bottom: 30px;
+	}
+	.contact-faq .faq_accordion .accordion_item .accordion_title {
+		padding: 15px 35px 15px 0;
+	}
+	.faq_bottom_cta {
+		justify-content: center;
+		margin-bottom: 0px;
+	}
+
+	.faq_bottom_cta h6 {
+		text-align: left;
+		width: 100%;
+		margin-bottom: 50px;
 	}
 }
 

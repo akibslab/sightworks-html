@@ -49,21 +49,39 @@
             <div class="site_logo">
               <a href="index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
             </div>
-            <div class="site_menu">
+            <div class="site_menu d-none d-md-block">
               <ul>
                 <li><a href="kunden.html">Kundenstimmen</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="team.html">Mein Team & ich</a></li>
               </ul>
             </div>
-            <div class="header_button">
+            <div class="header_button d-none d-md-block">
               <a class="btn" href="#">Termin vereinbaren</a>
+            </div>
+
+            <div class="menu_bars d-md-none">
+              <a href="javascript:void(0)"><img src="./assets/img/icons/bars.svg" alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- Sidemenu Start -->
+  <div class="side-menu d-md-none">
+    <div class="top-area d-flex flex-wrap align-items-center">
+
+      <a href="javascript:void(0)" class="cross-icon-box">
+        <img src="./assets/img/icons/close.svg" class="cross" alt="">
+      </a>
+    </div>
+
+    <div class="mobile-menu"></div>
+
+  </div>
+  <!-- Sidemenu End -->
   <!-- end: Header Area -->
   <main class="main-content" id="main">
     <!-- start: Hero Section -->
@@ -72,7 +90,7 @@
         <div class="contact_hero_container">
           <div class="row">
             <div class="col-md-7">
-              <div class="contact_hero_calender">
+              <div class="contact_hero_calender d-none d-md-block">
                 <!-- Calendly inline widget begin -->
                 <div class="calendly-inline-widget" data-url="https://calendly.com/sightworks/20min"
                   style="min-width:320px;height:630px;"></div>
@@ -83,19 +101,33 @@
             </div>
             <div class="col-md-5">
               <div class="contact_hero_content">
-                <h6>Ich freue mich, Sie kennenzulernen!
+
+                <h1 class="title wow fadeInDown d-md-none" data-wow-delay=".3s"><span>Per “Sie”, per “Du”</span><br>
+                  Ganz egal.
+                  Hauptsache,<br>
+                  <span>wir treten in</span><br>
+                  Kontakt
+                </h1>
+                <div class="buttons wow fadeInUp d-md-none" data-wow-delay=".4s">
+                  <a href="mailto:anfrage@sightworks.de" class="btn">Schreiben</a>
+                  <a href="#" class="btn">Call buchen</a>
+                </div>
+
+                <h6 class=" wow fadeInUp d-none d-md-block" data-wow-delay=".3s">Ich freue mich, Sie kennenzulernen!
                   Gerne auch per “Du” - wie es am besten passt.</h6>
 
-                <p>Buchen Sie doch einfach einen Termin für ein erstes Kennenlernen über zoom. Dann merken wir schnell,
+                <p class=" wow fadeInUp" data-wow-delay=".4s">Buchen Sie doch einfach einen Termin für ein erstes
+                  Kennenlernen über zoom. Dann merken wir schnell,
                   ob
                   die Chemie stimmt.</p>
 
-                <p>Selbstverständlich können Sie mir auch eine E-Mail schreiben wenn Sie vorab noch Fragen haben. Was
+                <p class=" wow fadeInUp" data-wow-delay=".5s">Selbstverständlich können Sie mir auch eine E-Mail
+                  schreiben wenn Sie vorab noch Fragen haben. Was
                   Ihnen
                   am meisten zusagt.</p>
 
               </div>
-              <div class="buttons">
+              <div class="buttons wow fadeInUp d-none d-md-block" data-wow-delay=".6s">
                 <a href="mailto:anfrage@sightworks.de" class="btn">Schreiben</a>
               </div>
             </div>
@@ -110,7 +142,7 @@
                 <img src="./assets/img/team/user.png" alt="">
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5  d-none d-md-block">
               <div class="user_info">
                 <h6>SIGHTWORKS <br> Studio für Design</h6>
                 <p>
@@ -225,6 +257,7 @@
   </main>
 
   <!-- start: Footer Area -->
+  <!-- start: Footer Area -->
   <footer class="site-footer">
     <div class="container">
       <div class="col">
@@ -238,6 +271,10 @@
 
               <span class="address">22607 Hamburg Deutschland</span>
               <a href="tel:+49 (0) 40 4145 6068" class="phone">+49 (0) 40 4145 6068</a>
+              <ul class="footer_menu d-md-none">
+                <li><a href="agbs.html">Impressum <br> Datenschutz
+                    AGBs</a></li>
+              </ul>
               <ul class="footer_socials">
                 <li><a href="mailto:anfrage@sightworks.de"><i class="fas fa-envelope"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/andrea-lechler-a3a61067/"><i
@@ -250,7 +287,7 @@
             </div>
           </div>
 
-          <div class="footer_widget">
+          <div class="footer_widget d-none d-md-block">
             <div class="footer_content">
               <ul class="footer_menu">
                 <li><a href="kunden.html">Kundenstimmen</a></li>
