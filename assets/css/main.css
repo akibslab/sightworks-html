@@ -223,12 +223,16 @@ textarea:focus {
 	border-radius: 50%;
 	margin: 0 4.5px;
 }
+.kunden .slick-dots li {
+	background-color: var(--color-white);
+}
 
 .slick-dots {
 	text-align: center;
 }
 
-.slick-dots li.slick-active {
+.slick-dots li.slick-active,
+.kunden .slick-dots li.slick-active {
 	background-color: var(--color-gray);
 }
 
@@ -427,6 +431,21 @@ textarea:focus {
 	padding: 0px 24px;
 	font-size: 15px;
 	font-weight: 400;
+}
+.mobile-menu li a {
+	display: block;
+	font-size: 22px;
+	line-height: 42px;
+	font-weight: 500;
+	color: var(--color-white);
+}
+
+.mobile-menu li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.mobile-menu ul {
+	margin-left: 44px;
 }
 /* end: Header Area */
 
@@ -1653,11 +1672,11 @@ textarea:focus {
 }
 .grid .grid-item {
 	width: 100%;
-	height: 592px;
+	height: auto;
 	float: left;
 }
 .grid .grid-item.height-2x {
-	height: 1184px;
+	height: auto;
 }
 .grid .grid-item img {
 	width: 100%;

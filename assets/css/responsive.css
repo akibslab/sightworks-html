@@ -112,12 +112,6 @@
 		width: 100%;
 		margin-bottom: 40px;
 	}
-	.grid .grid-item {
-		height: 480px;
-	}
-	.grid .grid-item.height-2x {
-		height: 960px;
-	}
 	.page-heading {
 		padding-top: 50px;
 		padding-bottom: 30px;
@@ -163,8 +157,14 @@
 	}
 	.site-header {
 		padding: 15px 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 99;
 	}
-
+	.main-content {
+		padding-top: 85px;
+	}
 	.hero-section {
 		height: 420px;
 	}
@@ -179,9 +179,26 @@
 			width: 100%;
 		}
 	}
+	.hero-section.kunden {
+		background-image: url(../img/hero/kunden-mobile-bg.jpg) !important;
+	}
+	.hero-section.portfolio {
+		background-image: url(../img/hero/portfolio-mobile-bg.jpg) !important;
+	}
+	.hero-section.team {
+		background-image: url(../img/hero/team-mobile-bg.jpg) !important;
+	}
 	.hero_content {
 		margin-left: 0px;
 		text-align: center;
+	}
+	.kunden .hero_content {
+		max-width: 80%;
+		margin: auto;
+	}
+	.team .hero_content {
+		max-width: 70%;
+		margin: auto;
 	}
 	.hero_content .title-2 {
 		font-weight: 300;
@@ -254,6 +271,9 @@
 		border-radius: 30px;
 		padding: 25px 20px;
 		margin: 0 10px;
+	}
+	.testimonial_carousel .single_testimonial {
+		align-self: stretch;
 	}
 	.testimonial_carousel .single_testimonial,
 	.testimonial_carousel .single_testimonial.slick-active,
@@ -361,6 +381,9 @@
 		padding-bottom: 60px;
 		text-align: left;
 	}
+	.team .cta_content {
+		text-align: center;
+	}
 	.cta_content {
 		max-width: 100%;
 	}
@@ -377,16 +400,41 @@
 		margin-bottom: 30px;
 	}
 	.cta_content .divider {
-		height: 2px;
-		margin-bottom: -75px;
+		background-color: transparent;
+		position: relative;
+		margin-top: 0;
+		height: 100%;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	.cta_content .divider::before {
+		content: "\f005";
+		font-family: "FontAwesome";
+		position: absolute;
+		left: 50%;
+		top: 0;
+		width: 100%;
+		transform: translateX(-50%);
 		margin-top: 0px;
+		font-size: 50px;
+		color: var(--color-red);
+		height: 50px;
+		line-height: 50px;
 	}
 	.cta_content .list-style {
 		margin-bottom: 30px;
+		padding-left: 0;
 	}
 	.cta_content .list-style li {
 		font-size: 15px;
 		line-height: 20px;
+		list-style: none;
+	}
+	.cta_content .list-style li span {
+		font-weight: 700;
+	}
+	.cta_content .list-style li:not(:last-child) {
+		margin-bottom: 20px;
 	}
 	.site-footer {
 		padding-top: 55px;
@@ -435,6 +483,13 @@
 	.cta_content .list-style.column li {
 		flex: 0 0 100%;
 		max-width: 100%;
+	}
+	.kunden .cta_content .list-style li {
+		list-style: disc;
+		margin-bottom: 0;
+	}
+	.kunden .cta_content .list-style {
+		padding-left: 20px;
 	}
 	.logos-section {
 		padding-top: 30px;

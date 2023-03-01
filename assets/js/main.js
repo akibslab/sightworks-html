@@ -1,11 +1,11 @@
 (function ($) {
 	"use strict";
 
-	$("header .site_menu").meanmenu({
-		meanMenuContainer: ".mobile-menu",
-		meanScreenWidth: "767",
-		meanExpand: ['<i class="fal fa-plus"></i>'],
-	});
+	// $("header .site_menu").meanmenu({
+	// 	meanMenuContainer: ".mobile-menu",
+	// 	meanScreenWidth: "767",
+	// 	meanExpand: ['<i class="fal fa-plus"></i>'],
+	// });
 
 	$("header .menu_bars a").on("click", function () {
 		$(".side-menu").addClass("open");
@@ -72,6 +72,7 @@
 						slidesToShow: 1,
 						arrows: false,
 						dots: true,
+						infinite: false,
 					},
 				},
 			],
@@ -134,59 +135,16 @@
 		if ($(".grid").length > 0) {
 			$(".grid").imagesLoaded(function () {
 				// init Isotope
-				$(".grid").isotope({
+				$(".grid").packery({
 					layoutMode: "packery",
 					itemSelector: ".grid-item",
 					// percentPosition: true,
 					packery: {
 						columnWidth: ".grid-sizer",
-						horizontal: true,
+						// horizontal: true,
 					},
 				});
 			});
 		}
 	});
-
-	// Sticky Menu
-	$(window).on("scroll", function () {
-		var scroll = $(window).scrollTop();
-		if (scroll < 300) {
-			$(".header-area").removeClass("sticky");
-		} else {
-			$(".header-area").addClass("sticky");
-		}
-	});
-
-	// Magnific Popup
-	// $(".video-play").magnificPopup({
-	// 	type: "iframe",
-	// });
-	//   End  Magnific Popup
-
-	//for menu active class
-	$(".portfolio-tab button").on("click", function (event) {
-		$(this).siblings(".active").removeClass("active");
-		$(this).addClass("active");
-		event.preventDefault();
-	});
-
-	// Smooth Scroll for IE/ EDGE/ SAFARI
-	$("a").on("click", function (event) {
-		if (this.hash !== "") {
-			event.preventDefault();
-
-			var hash = this.hash;
-
-			$("html, body").animate(
-				{
-					scrollTop: $(hash).offset().top,
-				},
-				800,
-				function () {
-					window.location.hash = hash;
-				}
-			);
-		}
-	});
-	// End Smooth Scroll for IE/ EDGE/ SAFARI
 })(jQuery);
