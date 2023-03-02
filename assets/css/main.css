@@ -394,8 +394,24 @@ textarea:focus {
 .site-header {
 	background-color: var(--color-light-light);
 	padding: 25px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	transition: all 0.3s ease-in-out 0s;
 }
 
+.site-header.sticky {
+	padding: 15px 0;
+}
+
+.main-content {
+	padding-top: 125px;
+	transition: all 0.3s ease-in-out 0s;
+}
+.site-header.sticky ~ .main-content {
+	padding-top: 100px;
+}
 .site_header_inner {
 	display: flex;
 	align-items: center;
@@ -414,19 +430,46 @@ textarea:focus {
 
 .site_menu ul li {
 	display: inline-block;
+	position: relative;
 }
 
-.site_menu ul li a {
+.site_menu ul li > a {
 	display: block;
 	font-weight: 500;
 	color: var(--color-gray);
 	padding: 10px 23px;
 }
-.site_menu ul li:hover a,
-.site_menu ul li.active a {
+.site_menu ul li:hover > a,
+.site_menu ul li.active > a {
 	font-weight: 700;
 }
+.site_menu ul li > ul.sub-menu {
+	position: absolute;
+	top: 120%;
+	width: 143px;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 10px 11px;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s ease-in-out 0s;
+	z-index: 999;
+}
+.site_menu ul li:hover > ul.sub-menu {
+	top: 100%;
+	visibility: visible;
+	opacity: 1;
+}
 
+.site_menu ul li > ul.sub-menu > li {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.site_menu ul li > ul.sub-menu > li > a {
+	padding: 0;
+}
 .header_button .btn {
 	padding: 0px 24px;
 	font-size: 15px;
@@ -446,6 +489,25 @@ textarea:focus {
 
 .mobile-menu ul {
 	margin-left: 44px;
+}
+.mobile-menu li > ul.sub-menu {
+	margin-left: 20px;
+	display: none;
+}
+
+.mobile-menu li {
+	position: relative;
+}
+
+.mobile-menu li.has-dropdown:after {
+	position: absolute;
+	content: "\f107";
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
+	right: 0;
+	top: 0;
+	color: var(--color-white);
+	padding: 10px;
 }
 /* end: Header Area */
 

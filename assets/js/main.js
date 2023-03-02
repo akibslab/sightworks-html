@@ -147,4 +147,20 @@
 			});
 		}
 	});
+
+	// Sticky Menu
+	$(window).on("scroll", function () {
+		var scroll = $(window).scrollTop();
+		if (scroll < 1) {
+			$(".site-header").removeClass("sticky");
+		} else {
+			$(".site-header").addClass("sticky");
+		}
+	}); // end: Sticky Menu
+
+	$(document).ready(function () {
+		$(".mobile-menu li.has-dropdown").on("click", function () {
+			$(this).children(".sub-menu").slideToggle();
+		});
+	});
 })(jQuery);
