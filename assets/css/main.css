@@ -1048,7 +1048,7 @@ textarea:focus {
 ==================================================*/
 .working-process {
 	padding-top: 90px;
-	/* padding-bottom: 90px; */
+	padding-bottom: 50px;
 }
 .working_process_content {
 	display: flex;
@@ -1742,7 +1742,7 @@ textarea:focus {
 }
 .grid .grid-item img {
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	/* object-fit: cover; */
 }
 .grid .grid-item.grid-67 {
