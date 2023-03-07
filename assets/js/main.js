@@ -138,7 +138,7 @@
 				$(".grid").packery({
 					layoutMode: "packery",
 					itemSelector: ".grid-item",
-					// percentPosition: true,
+					percentPosition: true,
 					packery: {
 						columnWidth: ".grid-sizer",
 						// horizontal: true,

@@ -615,6 +615,23 @@
 	.cta-section.details-page {
 		text-align: center;
 	}
+	.mobile-hero-section {
+		overflow: hidden;
+		padding: 65px 0;
+	}
+
+	.hero-section.sfz-details {
+		background-image: url("../img/service-faq/mobile-Bild1.jpg") !important;
+	}
+	.hero-section.spo-details {
+		background-image: url("../img/service-faq/mobile-Bild.jpg") !important;
+	}
+	.hero-section.app-details {
+		background-image: url("../img/service-faq/mobile-Bild2.jpg") !important;
+	}
+	.hero-section.logo-details {
+		background-image: url("../img/hero/mobile-logo-hero.jpg") !important;
+	}
 }
 
 /* Small devices (large mobile) (landscape phones, 480px to 767px) */
